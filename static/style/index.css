@@ -220,6 +220,8 @@ nav::after, #cate::after {
 }
 .person {
     display: inline-block;
+    width: 240px;
+    text-align: center;
 }
 .person_pic {
     width: 150px;

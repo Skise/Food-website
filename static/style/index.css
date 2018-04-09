@@ -88,6 +88,7 @@ nav::after, #cate::after {
     /* width: 90%; */
     /* margin: 0 auto; */
 }
+/* 我们的产品 */
 #product {
     /* height: 500px; */
     background-color: #e0dfdfe5;
@@ -141,14 +142,19 @@ nav::after, #cate::after {
     line-height: 24px;
 }
 /* 新闻部分 */
+#our_news {
+    padding: 0 0 60px;
+}
 #cate {
     width: 1000px;
     margin: 0 auto;
 }
 #cate > img {
     width: 400px;
-    height: 340px;
+    height: 342px;
     float: left;
+    /* vertical-align: baseline; */
+    /* display: block; */
 }
 #img_introduce {
     float: right;
@@ -194,10 +200,29 @@ nav::after, #cate::after {
     /* line-height: 24px; */
     /* vertical-align: middle; */
 }
-.pic_news {
-    width: 16px;
-    height: 16px;
+/* 联系我们 */
+#call_us {
+    background-color: #000000;
+}
+#contract_us {
+    color: #ffffff;
+}
+.far {
     margin-right: 5px;
-    /* vertical-align: middle; */
-    /* padding-top: 4px; */
+    color: #4f97e9;
+}
+.far:hover, .far:active {
+    color: #f15151;
+}
+#call_us > ul {
+    width: 1200px;
+    margin: 0 auto;
+}
+.person {
+    display: inline-block;
+}
+.person_pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
 }

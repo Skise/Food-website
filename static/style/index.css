@@ -203,6 +203,7 @@ nav::after, #cate::after {
 /* 联系我们 */
 #call_us {
     background-color: #000000;
+    color: #ffffff;
 }
 #contract_us {
     color: #ffffff;
@@ -214,7 +215,7 @@ nav::after, #cate::after {
 .far:hover, .far:active {
     color: #f15151;
 }
-#call_us > ul {
+#per_ul {
     width: 1200px;
     margin: 0 auto;
 }
@@ -222,9 +223,54 @@ nav::after, #cate::after {
     display: inline-block;
     width: 240px;
     text-align: center;
+    margin: 10px 78px;
 }
 .person_pic {
     width: 150px;
     height: 150px;
     border-radius: 50%;
+}
+.per_mess {
+    margin: 15px 0;
+}
+#position {
+    margin: 20px 0;
+    position: relative;
+    background: url('../images/map.png') no-repeat;
+    background-position-x: center;
+    height: 500px;
+    padding-bottom: 50px;
+    border-bottom: 2px solid #ffffff;
+}
+#position > img {
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    top: 16%;
+    right: 42%;
+}
+#ymmy {
+    font-size: 32px;
+    font-family: FZShuTi;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 20px 100px;
+}
+.some_mess {
+    display: inline-block;
+    padding: 2px 10px;
+    font-family: FZShuTi;
+    font-size: 20px;
+    border-right: 2px solid #ffffff;
+    margin-bottom: 30px;
+}
+.some_mess:first-child {
+    margin: 0 0 0 100px;
+}
+.some_mess:last-child {
+    border: none;
+}
+
+.choosed {
+    color: #f01a1a !important;
 }

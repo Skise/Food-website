@@ -16,11 +16,6 @@
     padding: 50px 40px;
     font-size: 18px;
 }
-#login_box::after {
-    display: block;
-    content: '';
-    clear: both;
-}
 .login_input {
     /* width: 100%; */
     margin: 5px 10px 20px;

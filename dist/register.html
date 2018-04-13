@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,8 +8,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="../static/style/register.css" />
 </head>
+
 <body>
-    
+    <div id="register_back">
+        <div id="box_back">
+            <div class="regis_box">用户名：
+                <input type="text" placeholder="请输入您的昵称" class="normal_input">
+            </div>
+            <div class="regis_box">手机号：
+                <input type="text" placeholder="请输入您的常用手机号" class="normal_input">
+            </div>
+            <div class="regis_box">邮&nbsp;&nbsp;&nbsp;箱：
+                <input type="email" placeholder="请输入您的常用邮箱" class="normal_input">
+            </div>
+            <div class="regis_box">密&nbsp;&nbsp;&nbsp;码：
+                <input type="password" placeholder="请输入6-16个字符" class="normal_input">
+            </div>
+            <div class="regis_box">确认密码：
+                <input type="password" placeholder="请再次输入您的密码" class="normal_input">
+            </div>
+            <div class="regis_box">验证码：
+                <input type="text" placeholder="请输入验证码" id="regis_code">
+                <img src="" alt="图片正在加载" id="regis_img">
+            </div>
+            <div class="regis_box" id="btn_box">
+                <button id="regis_btn">
+                    注 册
+                </button>
+            </div>
+            <a href="./login.html" id="login">已有账号？快去登录吧</a>
+        </div>
+    </div>
     <script src="main.js"></script>
 </body>
+
 </html>

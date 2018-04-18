@@ -1,0 +1,111 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+body {
+    width: 100%;
+    /* margin: 0 auto; */
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+a:hover, #login:hover {
+    color: #62cbdd;
+}
+#main_header {
+    /* height: 60px; */
+    background: url('../images/banner4.jpg');
+    /* z-index: -1; */
+    /* height: 350px; */
+}
+nav, header {
+    background: rgba(0, 0, 0, 0.7);
+}
+/* 导航条样式 */
+#logo {
+    height: 80px;
+    width: 80px;
+    padding-left: 50px;
+    float: left;
+}
+#title {
+    float: left;
+    /* margin: 32px 30px; */
+    height: 80px;
+    margin-left: 30px;
+}
+.pageName {
+    display: inline-block;
+    padding: 0 30px;
+    /* margin: 0 10px; */
+    height: 80px;
+    line-height: 80px;
+    /* vertical-align: middle; */
+    /* color: #ffffff; */
+}
+.pageName:hover, .pageName:active {
+    background-color: #572c2c;
+}
+#login {
+    float: right;
+    padding-right: 50px;
+    line-height: 80px;
+    color: #ecc14b;
+}
+nav::after, #cate::after {
+    content: '';
+    clear: both;
+    display: block;
+}
+/* 轮播图样式 */
+#website_introduce {
+    margin: 0 auto;
+    padding: 50px;
+    color: #ffffff;
+    text-align: center;
+}
+#intro_1 {
+    font-size: 80px;
+    font-weight: 700;
+    font-family: 'Times New Roman', Times, serif;
+}
+#intro_2 {
+    font-size: 50px;
+    font-weight: 700;
+    margin: 20px auto;
+    font-family: 'Times New Roman', Times, serif;
+}
+#intro_3 {
+    font-size: 28px;
+    font-family: 'Times New Roman', Times, serif;
+    width: 630px;
+    /* text-align: center; */
+    margin: 50px auto;
+}
+/* 页尾 */
+footer {
+    background-color: #000000;
+}
+#ymmy {
+    font-size: 32px;
+    font-family: FZShuTi;
+    font-weight: 600;
+    color: #ffffff;
+    margin: 0 100px 20px;
+    padding-top: 20px;
+}
+.some_mess {
+    display: inline-block;
+    padding: 2px 10px;
+    font-family: FZShuTi;
+    font-size: 20px;
+    border-right: 2px solid #ffffff;
+    margin-bottom: 30px;
+}
+.some_mess:first-child {
+    margin: 0 0 0 100px;
+}
+.some_mess:last-child {
+    border: none;
+}

@@ -90,8 +90,11 @@ nav::after, #cate::after {
 }
 /* 我们的产品 */
 #product {
-    /* height: 500px; */
-    background-color: #e0dfdfe5;
+    height: 750px;
+    /* width: 1520px; */
+    /* background-color: #e0dfdfe5; */
+    background: url('../images/ae.png') no-repeat;
+    background-size: cover;
     /* margin: 0; */
 }
 .dinyName {
@@ -105,12 +108,14 @@ nav::after, #cate::after {
 #dish {
     margin: 0 auto;
     width: 1250px;
+    padding-top: 200px;
+    /* opacity: 0.5; */
 }
 .dish_introduce {
     display: inline-block;
     width: 240px;
     /* height: 400px; */
-    background-color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.6);
     margin: 20px 80px 80px;
     box-shadow: 2px 2px 2px #6d6c6c;
 }
@@ -143,10 +148,14 @@ nav::after, #cate::after {
 }
 /* 新闻部分 */
 #our_news {
-    padding: 0 0 60px;
+    /* padding: 0 0 60px; */
+    background: url('../images/ai.png') no-repeat;
+    background-size: cover;
+    height: 720px;
 }
 #cate {
     width: 1000px;
+    padding: 220px 0;
     margin: 0 auto;
 }
 #cate > img {
@@ -227,14 +236,14 @@ nav::after, #cate::after {
 }
 .person_pic {
     width: 150px;
-    height: 150px;
+    height: 190px;
     border-radius: 50%;
 }
 .per_mess {
     margin: 15px 0;
 }
 #position {
-    margin: 20px 0;
+    margin: 20px 0 0;
     position: relative;
     background: url('../images/map.png') no-repeat;
     background-position-x: center;
@@ -249,12 +258,17 @@ nav::after, #cate::after {
     top: 16%;
     right: 42%;
 }
+footer {
+    background-color: #000000;
+    /* margin-top: 0; */
+    color: #ffffff;
+}
 #ymmy {
     font-size: 32px;
     font-family: FZShuTi;
     font-weight: 600;
-    color: #ffffff;
-    margin: 20px 100px;
+    margin: 0 100px 20px;
+    padding-top: 20px;
 }
 .some_mess {
     display: inline-block;

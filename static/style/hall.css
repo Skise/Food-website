@@ -1,6 +1,7 @@
 * {
     padding: 0;
     margin: 0;
+    color: #ffffff;
 }
 body {
     width: 100%;
@@ -19,8 +20,8 @@ a:hover, #login:hover {
     /* z-index: -1; */
     /* height: 350px; */
 }
-nav, header {
-    background: rgba(0, 0, 0, 0.7);
+nav {
+    background-color: #000000;
 }
 /* 导航条样式 */
 #logo {
@@ -58,30 +59,25 @@ nav::after, #cate::after {
     clear: both;
     display: block;
 }
-/* 轮播图样式 */
-#website_introduce {
-    margin: 0 auto;
-    padding: 50px;
+#back_img {
+    background: url('../images/ab.jpg');
+    background-size: cover;
+    /* margin: 80px 0 0; */
+    /* height: 400px; */
+    /* width: 100%; */
+    padding: 140px;
+    /* text-align: center; */
     color: #ffffff;
+    font-family: 'Times New Roman', Times, serif;
     text-align: center;
 }
-#intro_1 {
-    font-size: 80px;
-    font-weight: 700;
-    font-family: 'Times New Roman', Times, serif;
+#img_food {
+    font-size: 60px;
+    /* margin-top: 40px; */
 }
-#intro_2 {
-    font-size: 50px;
-    font-weight: 700;
-    margin: 20px auto;
-    font-family: 'Times New Roman', Times, serif;
-}
-#intro_3 {
-    font-size: 28px;
-    font-family: 'Times New Roman', Times, serif;
-    width: 630px;
-    /* text-align: center; */
-    margin: 50px auto;
+#img_Eng {
+    font-size: 32px;
+    margin-top: 60px;
 }
 /* 页尾 */
 footer {
@@ -91,7 +87,6 @@ footer {
     font-size: 32px;
     font-family: FZShuTi;
     font-weight: 600;
-    color: #ffffff;
     margin: 0 100px 20px;
     padding-top: 20px;
 }

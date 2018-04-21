@@ -156,3 +156,22 @@ footer {
 .some_mess:last-child {
     border: none;
 }
+#shoppingCar {
+    position: fixed;
+    right: 10px;
+    bottom: 200px;
+    width: 20px;
+    border: 1px solid #f57b7b;
+    color: #fc8e8e;
+    padding: 5px 10px;
+}
+.fas {
+    font-size: 16px;
+    padding: 5px 0;
+    /* width: 20px; */
+    color: #f88e8e;
+}
+
+.used {
+    background-color: #fc8e8e !important;
+}

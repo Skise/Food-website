@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>购物车</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="../static/style/car.css" />
+</head>
+
+<body>
+    <div id="event-wrap">
+        <div id="order-head">
+            <div class="step">1.我的购物车</div>
+            <div class="step">2.提交订单信息</div>
+            <div class="step">3.填写收货人信息</div>
+        </div>
+
+        <div id="car">
+            <div class="type">
+                <section id="cart">
+                    <div id="cart-wrap">
+                        <div class="_col">
+                            <div class="_row">商品名称</div>
+                            <div class="_row">商品价格</div>
+                            <div class="_row">商品数量</div>
+                            <div class="_row">操作</div>
+                        </div>
+                        <div id="cart-content">
+                            <!-- 物品区域 -->
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="type" id="address_input">
+                <span>填写收货地址</span>
+                <form>
+                    <div id="input_wrap">
+                        <div class="input-item_box">
+                            <div class="label">收获人姓名</div>
+                            <div class="input_box">
+                                <input type="text" />
+                            </div>
+                        </div>
+                        <div class="input-item_box">
+                            <div class="label">收货人地址</div>
+                            <div class="input_box">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-item_box">
+                            <div class="label">联系电话</div>
+                            <div class="input_box">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input-item_box">
+                            <div class="label">邮箱地址</div>
+                            <div class="input_box">
+                                <input type="text">
+                            </div>
+                        </div>
+                        <div class="input_btn">
+                            <input value="提交订单" type="submit" />
+                            <input value="重置订单" type="reset" />
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../bundle/jquery-3.2.1.js"></script>
+<script src="../bundle/cart.js"></script>
+
+</html>
+
+<!-- <div class="_col">
+    <div class="_row">厨房炒锅</div>
+    <div class="_row">￥299</div>
+    <div class="_row">
+        <input type="number" min=0 step=1 />
+    </div>
+    <div class="_row">取消商品</div>
+</div>
+<div class="_col">
+    <div class="_row"></div>
+    <div class="_row"></div>
+    <div class="_row"></div>
+</div> -->

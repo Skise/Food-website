@@ -148,5 +148,11 @@
     </div>
 </body>
 <script src="../bundle/index.js"></script>
-
+<script type="text/javascript">
+    var person = sessionStorage.getItem('username');
+    var node = document.querySelector('#login');
+    if (person != null) {
+        node.style.display = 'none';
+    }
+</script>
 </html>

@@ -1,14 +1,71 @@
-const cart_info = [{
-    name: "antd",
-    price: 123,
-    num: 33,
-    id: 1,
-}, {
-    name: "ice",
-    price: 32,
-    num: 890,
-    id: 2,
-}]
+//商品价格
+const priceArr = [599, 399, 109, 288, 358, 159, 59, 79, 10, 100, 30, 18, 100, 300, 150, 180, 108, 50, 200, 180];
+console.log(priceArr.length);
+const cart_info = [
+//     {
+//     name: "antd",
+//     price: 123,
+//     num: 33,
+//     id: 1,
+// }, {
+//     name: "ice",
+//     price: 32,
+//     num: 890,
+//     id: 2,
+// }
+];
+
+if (sessionStorage.getItem('shopNum')) {
+    console.log('in');
+    var shopcar = sessionStorage.getItem('shopNum');
+    var arr1 = shopcar.split(',');
+    objLength(arr1);
+} else {
+    $.ajax = {
+        url: url,
+        data: {
+            username: sessionStorage.getItem('username'),
+        },
+        error: function (res) {
+            console.log('error', res);
+        },
+        success: function (res) {
+            let arr = res.text;//返回的字符串的名字
+            let resArr = arr.split('-');
+            objLength(resArr);
+        }
+    }
+}
+
+//对象
+function objLength(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        let m = arr[i];
+        let obj = {
+            name: `${goodName(m)}`,
+            price: priceArr[m-1],
+            num: 1,
+            id: m,
+        }
+        console.log(m, obj);
+        cart_info.push(obj);
+    }
+    return cart_info;
+}
+
+//判断商品名称
+function goodName(num) {
+    if (num <= 8) {
+        return '厨具';
+    } else if (num <= 12) {
+        return '水果';
+    } else if (num <= 16) {
+        return '低脂';
+    } else {
+        return '美味';
+    }
+}
+
 // 全局状态
 const state = {
     step: 1,

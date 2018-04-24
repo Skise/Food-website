@@ -3,12 +3,20 @@ const url = "http://59.110.143.57:8080/yummy/login";
 // const url = "http://musicapi.leanapp.cn/search";
 
 if (localStorage.getItem("yummyName")) {
-  console.log("sure");
+  // console.log("sure");
   $("#username").val(localStorage.getItem("yummyName"));
   $("#password").val(localStorage.getItem("yummyPassword"));
   $("#remember").attr("checked", true);
 }
-$("#login_btn").click(function() {
+$("#login_btn").click(function () {
+  var $k = $('input');
+  // console.log($k);
+  for (let i = 0; i < $k.length; i++) {
+    if ($k[i].value === '') {
+      alert('请输入完整的信息');
+      return;
+    }
+  }
   var name = $("#username").val(),
     pass = $("#password").val();
   // console.log("bingo");
@@ -33,10 +41,10 @@ $("#login_btn").click(function() {
     // data: {
     // keywords: "shuang"
     // },
-    error: function(e) {
+    error: function (e) {
       console.log("error", e.statusText);
     },
-    success: function(res) {
+    success: function (res) {
       // console.log('res', res);
       // res { status: , statusText:  }
       var num = res.status;
@@ -55,7 +63,7 @@ $("#login_btn").click(function() {
       //     //
       // }
     },
-    complete: function(d) {
+    complete: function (d) {
       console.log("done");
     }
   });
